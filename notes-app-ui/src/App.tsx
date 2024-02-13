@@ -20,7 +20,8 @@ const App = () => {
     const fetchNotes = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/notes"
+          //"http://localhost:5000/api/notes"
+           "https://https://notes-app-for-teams.onrender.com"
         );
 
         const notes: Note[] =
@@ -47,7 +48,8 @@ const App = () => {
     event.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:5000/api/notes",
+        //"http://localhost:5000/api/notes",
+        "https://https://notes-app-for-teams.onrender.com",
         {
           method: "POST",
           headers: {
@@ -81,7 +83,8 @@ const App = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/notes/${selectedNote.id}`,
+        //`http://localhost:5000/api/notes/${selectedNote.id}`,
+        `https://notes-app-for-teams.onrender.com/${selectedNote.id}`,
         {
           method: "PUT",
           headers: {
@@ -125,7 +128,8 @@ const App = () => {
 
     try {
       await fetch(
-        `http://localhost:5000/api/notes/${noteId}`,
+        //`http://localhost:5000/api/notes/${noteId}`,
+        `https://notes-app-for-teams.onrender.com/${noteId}`,
         {
           method: "DELETE",
         }
