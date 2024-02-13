@@ -21,7 +21,7 @@ const App = () => {
       try {
         const response = await fetch(
           //"http://localhost:5000/api/notes"
-           "https://https://notes-app-for-teams.onrender.com"
+           "https://notes-app-for-teams.onrender.com"
         );
 
         const notes: Note[] =
@@ -49,7 +49,7 @@ const App = () => {
     try {
       const response = await fetch(
         //"http://localhost:5000/api/notes",
-        "https://https://notes-app-for-teams.onrender.com",
+        "https://notes-app-for-teams.onrender.com",
         {
           method: "POST",
           headers: {
